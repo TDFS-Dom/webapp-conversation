@@ -3,11 +3,11 @@ export const APP_ID = `${process.env.NEXT_PUBLIC_APP_ID}`
 export const API_KEY = `${process.env.NEXT_PUBLIC_APP_KEY}`
 export const API_URL = `${process.env.NEXT_PUBLIC_API_URL}`
 export const APP_INFO: AppInfo = {
-  title: 'Super Driver',
-  description: '',
-  copyright: '',
+  title: 'Intelligent Car',
+  description: 'Lái Xe An Toàn',
+  copyright: 'Car Doctor JSC',
   privacy_policy: '',
-  default_language: 'en',
+  default_language: 'vi',
 }
 
 export const isShowPrompt = false

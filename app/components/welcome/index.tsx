@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import TemplateVarPanel, { PanelTitle, VarOpBtnGroup } from '../value-panel'
 import s from './style.module.css'
-import { AppInfoComp, ChatBtn, EditBtn, FootLogo, PromptTemplate } from './massive-component'
+import { AppInfoComp, ChatBtn, EditBtn, PromptTemplate } from './massive-component'
 import type { AppInfo, PromptConfig } from '@/types/app'
 import Toast from '@/app/components/base/toast'
 import Select from '@/app/components/base/select'
@@ -126,7 +126,7 @@ const Welcome: FC<IWelcomeProps> = ({
               <input
                 type="number"
                 className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 "
-                placeholder={`${item.name}${!item.required ? `(${t('appDebug.variableTable.optional')})` : ''}`}
+                placeholder={`${item.name}${!item.required ? `(${t('app.variableTable.optional')})` : ''}`}
                 value={inputs[item.key]}
                 onChange={(e) => { onInputsChange({ ...inputs, [item.key]: e.target.value }) }}
               />
@@ -341,8 +341,7 @@ const Welcome: FC<IWelcomeProps> = ({
               : <div>
               </div>}
             <a className='flex items-center pr-3 space-x-3' href="https://dify.ai/" target="_blank">
-              <span className='uppercase'>{t('app.chat.powerBy')}</span>
-              <FootLogo />
+              <span className='uppercase'>{t('app.chat.powerBy')} CAR DOCTOR</span>
             </a>
           </div>
         )}
